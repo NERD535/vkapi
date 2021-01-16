@@ -1053,7 +1053,7 @@ type Story struct {
 
 // Album описывает альбом с фотографиями.
 type Album struct {
-	ID          int    `json:"id"`
+	ID          string    `json:"id"`
 	Thumb       *Photo `json:"thumb"`
 	OwnerID     int    `json:"owner_id"`
 	Title       string `json:"title"`
