@@ -363,17 +363,17 @@ type Post struct {
 		Type        string      `json:"type"`
 		Coordinates interface{} `json:"coordinates"`
 	} `json:"geo"`
-	SignerID    int         `json:"signer_id"`
-	CopyHistory interface{} `json:"copy_history"`
-	CanPin      int         `json:"can_pin"`
-	IsPinned    int         `json:"is_pinned"`
-	CanDelete   int         `json:"can_delete"`
-	CanEdit     int         `json:"can_edit"`
-	CanArchive  bool        `json:"can_archive"`
-	IsArchived  bool        `json:"is_archived"`
-	MarkedAsAds int         `json:"marked_as_ads"`
-	IsFavorite  bool        `json:"is_favorite"`
-	PostponedID int         `json:"postponed_id"`
+	SignerID    int    `json:"signer_id"`
+	CopyHistory []Post `json:"copy_history"`
+	CanPin      int    `json:"can_pin"`
+	IsPinned    int    `json:"is_pinned"`
+	CanDelete   int    `json:"can_delete"`
+	CanEdit     int    `json:"can_edit"`
+	CanArchive  bool   `json:"can_archive"`
+	IsArchived  bool   `json:"is_archived"`
+	MarkedAsAds int    `json:"marked_as_ads"`
+	IsFavorite  bool   `json:"is_favorite"`
+	PostponedID int    `json:"postponed_id"`
 }
 
 // Comment описывает комментарий к записи.
@@ -1053,7 +1053,7 @@ type Story struct {
 
 // Album описывает альбом с фотографиями.
 type Album struct {
-	ID          string    `json:"id"`
+	ID          string `json:"id"`
 	Thumb       *Photo `json:"thumb"`
 	OwnerID     int    `json:"owner_id"`
 	Title       string `json:"title"`
