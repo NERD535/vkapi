@@ -1,7 +1,6 @@
 # vkapi [![GoDoc](https://godoc.org/github.com/azzzak/vkapi?status.svg)](https://godoc.org/github.com/azzzak/vkapi) [![Go Report Card](https://goreportcard.com/badge/github.com/azzzak/vkapi)](https://goreportcard.com/report/github.com/azzzak/vkapi)
 
-Golang-пакет для работы с API VK.
-Версия протокола **101**.
+Golang-пакет для работы с API VK. Изменения в форк вносятся по мере обнаружения несоответствий коду библиотеки последней версии API
 
 ## Получение токена
 
