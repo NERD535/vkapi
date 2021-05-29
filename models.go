@@ -545,7 +545,7 @@ type MarketItem struct {
 	Title       string `json:"title"`
 	Description string `json:"description"`
 	Price       *struct {
-		Amount   int `json:"amount"`
+		Amount   string `json:"amount"`
 		Currency *struct {
 			ID   int    `json:"id"`
 			Name string `json:"name"`
@@ -1053,7 +1053,7 @@ type Story struct {
 
 // Album описывает альбом с фотографиями.
 type Album struct {
-	ID          string `json:"id"`
+	ID          int    `json:"id"`
 	Thumb       *Photo `json:"thumb"`
 	OwnerID     int    `json:"owner_id"`
 	Title       string `json:"title"`

@@ -52,7 +52,7 @@ func NewClientInit(token, lang string, timeout int) *API {
 			SetFormData(map[string]string{
 				"access_token": token,
 				"lang":         lang,
-				"v":            "5.101",
+				"v":            "5.131",
 			}).
 			SetTimeout(time.Duration(timeout) * time.Second),
 	}
