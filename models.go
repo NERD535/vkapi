@@ -880,6 +880,8 @@ type Video struct {
 		UserLikes int `json:"user_likes"`
 	}
 	Repeat int `json:"repeat"`
+
+	Type string `json:"type"`
 }
 
 // Audio описывает аудиозапись.
